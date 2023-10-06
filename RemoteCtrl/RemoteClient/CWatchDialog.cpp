@@ -60,6 +60,7 @@ CPoint CWatchDialog::UserPoint2RemoteScreenPoint(CPoint& point, bool isScreen)
 	float width0 = clientRect.Width();
 	float height0 = clientRect.Height();
 
+	TRACE("x= %d  y =%d", point.x, point.y);
 	int x = point.x * m_nObjWidth / width0;
 	int y = point.y * m_nObjHeight / height0;
 	return CPoint(x, y);
